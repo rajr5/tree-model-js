@@ -25,7 +25,7 @@ module.exports = (function () {
   TreeModel.prototype.parse = function (model) {
     var i, childCount, node;
 
-    if (!(model instanceof Object)) {
+    if (typeof model !== "object") {
       throw new TypeError('Model must be of type object.');
     }
 
